@@ -345,8 +345,7 @@ def fit_line_emission_absorption(
 
 
 
-def breakstrength(wave_rest, spec, blue_mask, red_mask, spec_unc=None): #defining what variables are needed
-
+def breakstrength(wave_rest, spec, blue_wave_edges, red_wave_edges, spec_unc=None): #defining what variables are needed
     """
     SUMMARY:
     Balmer and D4000 Breaks, measuring spectral break strength as a ratio of continuums. 
@@ -361,7 +360,8 @@ def breakstrength(wave_rest, spec, blue_mask, red_mask, spec_unc=None): #definin
     wave_rest (array): Restframe wavelength array. Assumes that all red/blue masks defines fall within wavelength array 
     """
      
-    
+    blue_mask = (wave_rest>=blue_wave_edges[0])&(wave_rest<=blue_wave_edges[1])
+    red_mask = (wave_rest>=red_wave_edges[0])&(wave_rest<=red_wave_edges[1])
     blue_wave = wave_rest[blue_mask] #restframe wavelength in blue window
     red_wave=wave_rest[red_mask] #restframe wavelength in red window
     blue_spec=spec[blue_mask] #flux in blue window
@@ -386,6 +386,7 @@ def breakstrength(wave_rest, spec, blue_mask, red_mask, spec_unc=None): #definin
     
     else:  
         return break_strength
+    
 
     
 """
