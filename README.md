@@ -44,7 +44,7 @@ Blue and red wavelegnths are on either side of the line continuum that captures 
 Continuum breaks are tracers of older stellar populations, calculted as the ratio between the median flux in two windows on either side of the break (often termed the "red" and "blue" sides.) The Balmer break traces hydrgoen absoprtion from from cooler, intermediate-aged stars, while the DN4000 break traces significantly older stellar populations, as they trace metal absorption in stellar atmospheres that are **(have only formed in older stars idk how to word this)
 
 -------------------------------------------------------------------------------------
-# **RestFrame Wavlegnths** 
+# **RestFrame Wavelengths** 
 Restframe Wavelengths are the intrisic colors a galaxy emits within its restframes, assuming the galaxy is not affected by redshift. 
 
 Colors are calculated by calculating the magnitude of a spectrum within a specific bandpass, and using a library named astro-sedpy, we assume a photometric sensitivty curve, which is the amount of light a filter is allowed to let through at a specific wavelength.
