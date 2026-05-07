@@ -6,7 +6,7 @@ Observations of high-redshift galaxies allow us to piece together the history of
 Within this project, data from the Sloan Digital Sky Survey (SDSS) and Mapping Nearby Galaxies at APO (MaNGA) surveys are analyzed and calculated to find the equivlent line widths, continuum breaks, and restframe colors of spectra. The goal of these measurements is to create a consistent and universal analysis tool that can be used by anyone accessing the codebase. By ensuring consistency within our program, we aim to reduce discrepancies, biases, and inconsistencies that may arise when spectra are analyzed differently and or independently. 
 
 -------------------------------------------------------------------------------------
-# Codes imported and functions used/Important notes before starting
+# Imported Libraries 
 This project includes some of the following libraries: 
 
 Numpy
